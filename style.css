@@ -42,7 +42,7 @@ body {
     gap: 20px;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
-    gap: 20px; /* Spacing between items */
+    gap: 30px; /* Spacing between items */
     justify-content: center; /* Center grid horizontally */
     margin: 50px auto; /* Center grid vertically if needed */
 }
@@ -117,4 +117,25 @@ body {
     color: #fff;
     text-transform: lowercase;
     text-shadow: 2px 2px 1px black;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0; /* Vertical padding */
+    position: fixed; /* Fixes the footer to the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer a {
+    color: #00bfff; /* Light blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
