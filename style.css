@@ -86,6 +86,17 @@ body {
 .logo{
     width: 300px;
     cursor: pointer;
+    display: inline-block; /* Ensures the image can be transformed */
+    animation: rocking 1s ease-in-out infinite alternate; /* Rocking animation */
+}
+
+@keyframes rocking {
+    0% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
 }
 
 .navbar ul li{
@@ -123,7 +134,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: #fff; /* White text */
     text-align: center;
-    padding: 20px 0; /* Vertical padding */
+    padding: 30px 0; /* Vertical padding */
     position: fixed; /* Fixes the footer to the bottom of the page */
     bottom: 0;
     width: 100%;
@@ -138,4 +149,11 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Highlight and rocking animation for @cuckweezy */
+.highlight {
+    color: #efdd6a; /* Highlight color */
+    font-weight: bold; /* Make the text bold */
+    display: inline-block;
 }
